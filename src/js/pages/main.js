@@ -9,7 +9,7 @@ import {
 import io from 'socket.io-client';
 let temp = [];
 
-const socket = io.connect('https://2389-105-163-39-180.ngrok.io');
+const socket = io.connect('http://localhost:8000');
 
 export default class main extends React.Component {
     constructor(props) {
