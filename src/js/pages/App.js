@@ -8,11 +8,18 @@ var optionsThree = { day: 'numeric' };
 
 function getshortHand(day) {
     var lastDayDigit = 0;
+    var firstDayDigit = 0;
     if (day.length > 1) {
         lastDayDigit = day[1]
+        firstDayDigit = day[0]
     } else {
         lastDayDigit = day[0]
     }
+
+    if(firstDayDigit != 0 && firstDayDigit == 1){
+        return 'th'
+    }
+
     if (lastDayDigit == 1) {
         return 'st'
     } else if (lastDayDigit == 2) {

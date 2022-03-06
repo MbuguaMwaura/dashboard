@@ -14,7 +14,7 @@ const socket = io.connect('http://localhost:8000');
 export default class main extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = { 
             dashBoardActive: false,
             navigate: '',
             wallpaper: 'wallpaper1',
